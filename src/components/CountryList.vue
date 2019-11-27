@@ -1,9 +1,8 @@
 <template lang="html">
 <div>
-  <ul>
-    <country-list-item v-for ="(country,index) in countries" :country="country" :key="index"></country-list-item>
-
-  </ul>
+  <select>
+    <option country-list-item v-for ="(country,index) in countries" :country="country" :key="index">{{country.name}}</country-list-item></option>
+  </select>
 
 </div>
 </template>
