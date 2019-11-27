@@ -1,6 +1,6 @@
 <template lang="html">
 
-<li v-on:click="handleClick" >{{country.name}}</li>
+<option v-on:click="handleClick" >{{country.name}}</option>
 
 </template>
 
@@ -14,8 +14,9 @@ export default {
   methods:{ handleClick(){
     // console.log('country', this.country)}
     eventBus.$emit("country-selected",this.country)
+  },
 
-  }}
+}
 
 
 }
